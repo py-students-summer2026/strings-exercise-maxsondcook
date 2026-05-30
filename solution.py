@@ -11,7 +11,7 @@ def get_adj():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
-
+    word = input("Pick an adjective. ")
     # don't modify the return statement below...
     return word
 
@@ -22,7 +22,7 @@ def get_verb():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
-
+    word = input("Pick a verb. ")
     # don't modify the return statement below... leave it as the last line in this function
     return word
 
@@ -33,7 +33,7 @@ def get_plural_noun():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
-
+    word = input("Please pick a plural noun. ")
     # don't modify the return statement below... leave it as the last line in this function
     return word
 
@@ -44,7 +44,7 @@ def get_proper_noun():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
-
+    word = input("Please pick a proper noun (the name of a location, person, or event). ")
     # don't modify the return statement below... leave it as the last line in this function
     return word
 
@@ -65,8 +65,16 @@ def generate():
 
     # write your code for this function below this line...
     # feel free to modify the given poem code and add any additional code as necessary
+    adjective_1 = get_adj()
+    verb_1 = get_verb()
+    adjective_2 = get_adj()
+    plural_noun_1 = get_plural_noun()
+    proper_noun_1 = get_proper_noun()
+    verb_2 = get_verb()
+    plural_noun_2 = get_plural_noun()
+    proper_noun_2= get_proper_noun()
 
-    poem = """
+    poem = f"""
     'Twas {adjective_1}, and the slithy toves
     Did {verb_1} and gimble in the wabe;
     All {adjective_2} were the borogoves,
